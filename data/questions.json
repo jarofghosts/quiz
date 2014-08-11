@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What is 2+2?",
+    "answers": [
+      "6",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctAnswer": 1
+  }
+]
