@@ -1,7 +1,12 @@
 <div>
-  <div altr-text="question"></div>
-  <div altr-for="answer in answers">
-    <input type="radio" name="answer" value="$index" id="answer-{{ $index }}">
+  <div altr-text="currentQuestion.question"></div>
+  <div altr-for="answer in currentQuestion.answers" rel="answers">
+    <input
+        type="radio"
+        name="answer"
+        value="{{ $index }}"
+        id="answer-{{ $index }}">
     <label for="answer-{{ $index }}" altr-text="answer">
   </div>
+  <button altr-attr-disabled="currentAnswer === undefined" name="submit">Next &gt;</button>
 </div>
